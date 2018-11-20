@@ -9,7 +9,7 @@
   
           <form name="calculator">
             
-            <input type="text" name="answer" />
+            <input type="text" name="answer" id="bar" />
             <div>    
                 <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
                 <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
@@ -31,7 +31,7 @@
             <div>
                 <input type="button" value=" c " onclick="calculator.answer.value = ''" />
                 <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value);e()" />
                 <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
                 <input type="button" value=" . " onclick="calculator.answer.value += '.'"/>
                 <input type="button" value=" % " onclick="calculator.answer.value += '%'"/>
@@ -39,9 +39,11 @@
   
     
           </form>
-          <div id="agh">
-            <p> Learner's Calc
+          <div id="history">
+                <p>History Of Calculations are here:</p>
+
           </div>
         </div>
+        <script type="text/javascript" src="calc.js"></script>
     </body>
 </html>
